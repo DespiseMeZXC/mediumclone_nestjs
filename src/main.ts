@@ -1,3 +1,10 @@
+require('dotenv').config();
+
+if (process.env.ENV === 'PROD')
+{
+  require('module-alias/register');
+}
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
