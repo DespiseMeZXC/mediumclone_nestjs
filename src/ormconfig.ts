@@ -7,6 +7,8 @@ const config: ConnectionOptions = {
     username: process.env.USERNAME_DB,
     password: process.env.PASSWORD_DB,
     database: process.env.DATABASE,
+    entities: [__dirname + '/**/*.entity{.ts,.js}'],
+    synchronize: true,
 }
 
 export default config;
